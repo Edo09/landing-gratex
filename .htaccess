@@ -1,0 +1,14 @@
+# Enable rewriting
+Options +FollowSymLinks
+RewriteEngine On
+
+# --- Homepage ---
+# When URL is empty → load index.php
+RewriteRule ^$ index.php [L]
+
+# --- Pretty URLs ---
+# If the requested file or folder DOES NOT exist,
+# route all requests to index.php for routing
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ index.php [L,QSA]
