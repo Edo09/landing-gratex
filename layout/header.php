@@ -67,7 +67,7 @@
                     </a>
                 </div>
             </div>
-            <a href="/" class="header-cta-btn">Iniciar Sesi&oacute;n</a>
+            <a href="/" class="header-cta-btn">Ingresar</a>
         </div>
 
         <!-- Mobile Menu Toggle -->
@@ -89,7 +89,7 @@
             <a href="tel:+18095389203"><i class="flaticon-call"></i> (809) 538 9203</a>
             <a href="mailto:gratexrd@gmail.com"><i class="flaticon-send-mail"></i> gratexrd@gmail.com</a>
         </div>
-        <a href="/" class="mobile-cta-btn">Iniciar Sesi&oacute;n</a>
+        <a href="/" class="mobile-cta-btn">Ingresar</a>
     </div>
 </header>
 <!-- Modern Header End -->
