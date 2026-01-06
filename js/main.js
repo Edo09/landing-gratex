@@ -19,19 +19,41 @@
     });
     
     
-    // Sticky Navbar
+    // Modern Header Sticky
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 90) {
-            $('.nav-bar').addClass('nav-sticky');
-            $('.carousel, .page-header').css("margin-top", "73px");
+        if ($(this).scrollTop() > 80) {
+            $('.main-header').addClass('header-sticky');
+            $('.carousel, .page-header').css("margin-top", "80px");
         } else {
-            $('.nav-bar').removeClass('nav-sticky');
+            $('.main-header').removeClass('header-sticky');
             $('.carousel, .page-header').css("margin-top", "0");
         }
     });
+
+    // Mobile Menu Toggle
+    $(document).ready(function () {
+        $('#mobileMenuToggle').on('click', function () {
+            $(this).toggleClass('active');
+            $('#mobileMenu').toggleClass('active');
+        });
+
+        // Close mobile menu when clicking a link
+        $('.mobile-nav-menu a, .mobile-cta-btn').on('click', function () {
+            $('#mobileMenuToggle').removeClass('active');
+            $('#mobileMenu').removeClass('active');
+        });
+
+        // Close mobile menu when clicking outside
+        $(document).on('click', function (e) {
+            if (!$(e.target).closest('.main-header').length) {
+                $('#mobileMenuToggle').removeClass('active');
+                $('#mobileMenu').removeClass('active');
+            }
+        });
+    });
     
     
-    // Dropdown on mouse hover
+    // Dropdown on mouse hover (legacy support)
     $(document).ready(function () {
         function toggleNavbarMethod() {
             if ($(window).width() > 992) {
