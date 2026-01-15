@@ -5,7 +5,8 @@
             <div class="col-md-6 col-lg-3">
                 <div class="footer-logo">
                     <a href="/">
-                        <img src="img/logos/logo-gratex-notext.png" alt="Gratex" style="max-width: 100%; height: auto; display: block; width: 100%; max-width: 150px;">
+                        <img src="img/logos/logo-gratex-notext.png" alt="Gratex"
+                            style="max-width: 100%; height: auto; display: block; width: 100%; max-width: 150px;">
                     </a>
                 </div>
             </div>
@@ -76,3 +77,51 @@
 </div>
 <!-- Social Media Sidebar End -->
 <a href="#top" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header"
+                style="background: linear-gradient(135deg, #00417a 0%, #0066cc 100%); color: white;">
+                <h5 class="modal-title" id="loginModalLabel" style="color: white; font-weight: 600;">Iniciar Sesión</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                    style="color: white; opacity: 1;">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body p-4">
+                <form id="loginForm">
+                    <div id="login-alert" class="alert alert-danger" style="display:none;"></div>
+                    <div class="form-group">
+                        <label for="emailOrUsername" style="font-weight: 500; color: #343a40;">Usuario o Email</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" id="emailOrUsername" name="emailOrUsername" required
+                                placeholder="Ingrese su usuario o email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" style="font-weight: 500; color: #343a40;">Contraseña</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                            </div>
+                            <input type="password" class="form-control" id="password" name="password" required
+                                placeholder="Ingrese su contraseña">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block"
+                        style="background: #00417a; border-color: #00417a; padding: 10px; font-weight: 600;">
+                        <span id="login-btn-text">INGRESAR</span>
+                        <span id="login-spinner" class="spinner-border spinner-border-sm" role="status"
+                            aria-hidden="true" style="display: none;"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

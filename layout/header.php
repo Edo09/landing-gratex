@@ -18,13 +18,15 @@
                     </a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="/blog" class="nav-menu-link <?php echo ($_SERVER['REQUEST_URI'] === '/blog' ? 'active' : ''); ?>">
+                    <a href="/blog"
+                        class="nav-menu-link <?php echo ($_SERVER['REQUEST_URI'] === '/blog' ? 'active' : ''); ?>">
                         <span class="link-text">Servicios</span>
                         <span class="link-indicator"></span>
                     </a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="/contact" class="nav-menu-link <?php echo ($_SERVER['REQUEST_URI'] === '/contact' ? 'active' : ''); ?>">
+                    <a href="/contact"
+                        class="nav-menu-link <?php echo ($_SERVER['REQUEST_URI'] === '/contact' ? 'active' : ''); ?>">
                         <span class="link-text">Contacto</span>
                         <span class="link-indicator"></span>
                     </a>
@@ -67,7 +69,7 @@
                     </a>
                 </div>
             </div>
-            <a href="/" class="header-cta-btn">Ingresar</a>
+            <a href="#" class="header-cta-btn" data-toggle="modal" data-target="#loginModal">Ingresar</a>
         </div>
 
         <!-- Mobile Menu Toggle -->
@@ -82,14 +84,16 @@
     <div class="mobile-menu" id="mobileMenu">
         <ul class="mobile-nav-menu">
             <li><a href="/" class="<?php echo ($_SERVER['REQUEST_URI'] === '/' ? 'active' : ''); ?>">Inicio</a></li>
-            <li><a href="/blog" class="<?php echo ($_SERVER['REQUEST_URI'] === '/blog' ? 'active' : ''); ?>">Servicios</a></li>
-            <li><a href="/contact" class="<?php echo ($_SERVER['REQUEST_URI'] === '/contact' ? 'active' : ''); ?>">Contacto</a></li>
+            <li><a href="/blog"
+                    class="<?php echo ($_SERVER['REQUEST_URI'] === '/blog' ? 'active' : ''); ?>">Servicios</a></li>
+            <li><a href="/contact"
+                    class="<?php echo ($_SERVER['REQUEST_URI'] === '/contact' ? 'active' : ''); ?>">Contacto</a></li>
         </ul>
         <div class="mobile-contact-info">
             <a href="tel:+18095389203"><i class="flaticon-call"></i> (809) 538 9203</a>
             <a href="mailto:gratexrd@gmail.com"><i class="flaticon-send-mail"></i> gratexrd@gmail.com</a>
         </div>
-        <a href="/" class="mobile-cta-btn">Ingresar</a>
+        <a href="#" class="mobile-cta-btn" data-toggle="modal" data-target="#loginModal">Ingresar</a>
     </div>
 </header>
 <!-- Modern Header End -->

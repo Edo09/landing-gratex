@@ -1,37 +1,28 @@
 <!-- Carousel Start -->
 <div id="carousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
-        <li data-target="#carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel" data-slide-to="1"></li>
-        <li data-target="#carousel" data-slide-to="2"></li>
+        <?php foreach ($carouselItems as $index => $item): ?>
+            <li data-target="#carousel" data-slide-to="<?php echo $index; ?>"
+                class="<?php echo $index === 0 ? 'active' : ''; ?>"></li>
+        <?php endforeach; ?>
     </ol>
     <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="https://placehold.co/1366x600" alt="Carousel Image">
-            <div class="carousel-caption">
-                <p class="animated fadeInRight">We Are Professional</p>
-                <h1 class="animated fadeInLeft">For Your Dream Project</h1>
-                <a class="btn animated fadeInUp" href="/">Get A Quote</a>
+        <?php foreach ($carouselItems as $index => $item): ?>
+            <div class="carousel-item <?php echo $index === 0 ? 'active' : ''; ?>">
+                <img src="<?php echo getImageUrl($item['image_path']); ?>"
+                    alt="<?php echo htmlspecialchars($item['title']); ?>"
+                    style="width: 100%; height: 600px; object-fit: cover;">
+                <div class="carousel-caption">
+                    <p class="animated fadeInRight">
+                        <?php echo htmlspecialchars($item['subtitle']); ?>
+                    </p>
+                    <h1 class="animated fadeInLeft">
+                        <?php echo htmlspecialchars($item['title']); ?>
+                    </h1>
+                    <!-- <a class="btn animated fadeInUp" href="/">Get A Quote</a> -->
+                </div>
             </div>
-        </div>
-
-        <div class="carousel-item">
-            <img src="https://placehold.co/1366x600" alt="Carousel Image">
-            <div class="carousel-caption">
-                <p class="animated fadeInRight">Professional Builder</p>
-                <h1 class="animated fadeInLeft">We Build Your Home</h1>
-                <a class="btn animated fadeInUp" href="/">Get A Quote</a>
-            </div>
-        </div>
-
-        <div class="carousel-item">
-            <img src="https://placehold.co/1366x600" alt="Carousel Image">
-            <div class="carousel-caption">
-                <p class="animated fadeInRight">We Are Trusted</p>
-                <h1 class="animated fadeInLeft">For Your Dream Home</h1>
-                <a class="btn animated fadeInUp" href="/">Get A Quote</a>
-            </div>
-        </div>
+        <?php endforeach; ?>
     </div>
 
     <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
@@ -95,114 +86,29 @@
             <h2>Servicios que ofrecemos</h2>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="service-item">
-                    <div class="service-img">
-                        <img src="https://placehold.co/400" alt="Image">
-                        <div class="service-overlay">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi.
-                                Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida
-                                condimentum, viverra quis sem.
-                            </p>
+            <?php foreach ($services as $index => $item): ?>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="<?php echo 0.1 * ($index + 1); ?>s">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="<?php echo getImageUrl($item['image_path']); ?>"
+                                alt="<?php echo htmlspecialchars($item['title']); ?>"
+                                style="width: 100%; height: 250px; object-fit: cover;">
+                            <div class="service-overlay">
+                                <p>
+                                    <?php echo htmlspecialchars($item['description']); ?>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service-text">
+                            <h3>
+                                <?php echo htmlspecialchars($item['title']); ?>
+                            </h3>
+                            <a class="btn" href="<?php echo getImageUrl($item['image_path']); ?>"
+                                data-lightbox="service">+</a>
                         </div>
                     </div>
-                    <div class="service-text">
-                        <h3>Building Construction</h3>
-                        <a class="btn" href="https://placehold.co/400" data-lightbox="service">+</a>
-                    </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="service-item">
-                    <div class="service-img">
-                        <img src="https://placehold.co/400" alt="Image">
-                        <div class="service-overlay">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi.
-                                Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida
-                                condimentum, viverra quis sem.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="service-text">
-                        <h3>House Renovation</h3>
-                        <a class="btn" href="https://placehold.co/400" data-lightbox="service">+</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="service-item">
-                    <div class="service-img">
-                        <img src="https://placehold.co/400" alt="Image">
-                        <div class="service-overlay">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi.
-                                Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida
-                                condimentum, viverra quis sem.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="service-text">
-                        <h3>Architecture Design</h3>
-                        <a class="btn" href="https://placehold.co/400" data-lightbox="service">+</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-                <div class="service-item">
-                    <div class="service-img">
-                        <img src="https://placehold.co/400" alt="Image">
-                        <div class="service-overlay">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi.
-                                Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida
-                                condimentum, viverra quis sem.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="service-text">
-                        <h3>Interior Design</h3>
-                        <a class="btn" href="https://placehold.co/400" data-lightbox="service">+</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="service-item">
-                    <div class="service-img">
-                        <img src="https://placehold.co/400" alt="Image">
-                        <div class="service-overlay">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi.
-                                Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida
-                                condimentum, viverra quis sem.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="service-text">
-                        <h3>Fixing & Support</h3>
-                        <a class="btn" href="https://placehold.co/400" data-lightbox="service">+</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-                <div class="service-item">
-                    <div class="service-img">
-                        <img src="https://placehold.co/400" alt="Image">
-                        <div class="service-overlay">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi.
-                                Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida
-                                condimentum, viverra quis sem.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="service-text">
-                        <h3>Painting</h3>
-                        <a class="btn" href="https://placehold.co/400" data-lightbox="service">+</a>
-                    </div>
-                </div>
-            </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </div>
