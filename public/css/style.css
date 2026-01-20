@@ -23,8 +23,7 @@ a {
 }
 
 a:hover,
-a:active,
-a:focus {
+a:active {
   color: #e5f3ff;
   outline: none;
   text-decoration: none;
@@ -96,6 +95,7 @@ a:focus {
   from {
     transform: translateY(-100%);
   }
+
   to {
     transform: translateY(0);
   }
@@ -1147,6 +1147,7 @@ a:focus {
     transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
     opacity: 1;
   }
+
   100% {
     transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
     opacity: 0;
@@ -1954,6 +1955,7 @@ a:focus {
 }
 
 @media (max-width: 768px) {
+
   .footer .copyright p,
   .footer .copyright .col-md-6:last-child p {
     margin: 5px 0;

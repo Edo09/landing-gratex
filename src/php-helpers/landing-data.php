@@ -1,8 +1,11 @@
 <?php
+// Load configuration
+require_once __DIR__ . '/../../config.php';
+
 // Function to fetch data from API
 function getApiData($endpoint)
 {
-    $apiUrl = 'http://localhost:8000/api/' . $endpoint;
+    $apiUrl = API_URL . '/api/' . $endpoint;
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $apiUrl);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -54,6 +57,6 @@ function getImageUrl($path)
     if (strpos($path, 'http') === 0) {
         return $path;
     }
-    return 'http://localhost:8000/' . $path;
+    return API_URL . '/' . $path;
 }
 ?>

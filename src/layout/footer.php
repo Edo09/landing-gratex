@@ -5,7 +5,7 @@
             <div class="col-md-6 col-lg-3">
                 <div class="footer-logo">
                     <a href="/">
-                        <img src="img/logos/logo-gratex-notext.png" alt="Gratex"
+                        <img src="public/img/logos/logo-gratex-notext.png" alt="Gratex"
                             style="max-width: 100%; height: auto; display: block; width: 100%; max-width: 150px;">
                     </a>
                 </div>
