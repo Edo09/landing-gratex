@@ -5,7 +5,7 @@ require_once __DIR__ . '/../../config.php';
 // Function to fetch data from API
 function getApiData($endpoint)
 {
-    $apiUrl = API_URL . '/api/' . $endpoint;
+    $apiUrl = API_URL . $endpoint;
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $apiUrl);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);

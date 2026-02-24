@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+    const API_URL = 'http://gratex.net';
     $('#loginForm').on('submit', function (e) {
         e.preventDefault();
 
@@ -19,7 +21,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: 'POST',
-            url: 'http://localhost:8000/api/auth/login',
+            url: API_URL + '/api/auth/login',
             data: JSON.stringify(formData),
             contentType: 'application/json',
             success: function (response) {
@@ -34,7 +36,7 @@ $(document).ready(function () {
 
                     // Redirect to Admin Dashboard with token and user data
                     // This uses the ExternalCallback route we identified in the dashboard
-                    window.location.href = 'http://localhost:5173/auth/callback?token=' + encodeURIComponent(token) + '&user=' + encodeURIComponent(userStr);
+                    window.location.href = API_URL + '/admin/auth/callback?token=' + encodeURIComponent(token) + '&user=' + encodeURIComponent(userStr);
                 } else {
                     $('#login-alert').text(response.error || 'Credenciales inválidas').show();
                     resetBtn(btn, originalText);

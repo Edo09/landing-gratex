@@ -10,8 +10,7 @@
         <?php foreach ($carouselItems as $index => $item): ?>
             <div class="carousel-item <?php echo $index === 0 ? 'active' : ''; ?>">
                 <img src="<?php echo getImageUrl($item['image_path']); ?>"
-                    alt="<?php echo htmlspecialchars($item['title']); ?>"
-                    style="width: 100%; height: 600px; object-fit: cover;">
+                    alt="<?php echo htmlspecialchars($item['title']); ?>">
                 <div class="carousel-caption">
                     <p class="animated fadeInRight">
                         <?php echo htmlspecialchars($item['subtitle']); ?>
