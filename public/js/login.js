@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    const API_URL = 'http://gratex.net';
+    const API_URL = 'https://gratex.net';
     $('#loginForm').on('submit', function (e) {
         e.preventDefault();
 
