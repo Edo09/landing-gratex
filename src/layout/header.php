@@ -4,7 +4,7 @@
         <!-- Logo -->
         <div class="header-logo">
             <a href="/">
-                <img src="https://placehold.co/1200x320" alt="Gratex Logo">
+                <img src="public/img/logos/logo-gratex-notext.png" alt="Gratex Logo">
             </a>
         </div>
 
