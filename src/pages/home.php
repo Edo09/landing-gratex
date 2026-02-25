@@ -184,65 +184,25 @@
             <p>Posts</p>
             <h2>Ultimos Posts</h2>
         </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <img src="https://placehold.co/400x250" alt="Image">
-                    </div>
-                    <div class="blog-title">
-                        <h3>Lorem ipsum dolor sit</h3>
-                        <a class="btn" href="">+</a>
-                    </div>
-
-                    <div class="blog-text">
-                        <p>
-                            Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit
-                            non vulputate. Aliquam metus tortor
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <img src="https://placehold.co/400x250" alt="Image">
-                    </div>
-                    <div class="blog-title">
-                        <h3>Lorem ipsum dolor sit</h3>
-                        <a class="btn" href="">+</a>
-                    </div>
-
-                    <div class="blog-text">
-                        <p>
-                            Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit
-                            non vulputate. Aliquam metus tortor
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <img src="https://placehold.co/400x250" alt="Image">
-                    </div>
-                    <div class="blog-title">
-                        <h3>Lorem ipsum dolor sit</h3>
-                        <a class="btn" href="">+</a>
-                    </div>
-
-                    <div class="blog-text">
-                        <p>
-                            Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit
-                            non vulputate. Aliquam metus tortor
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Elfsight Instagram Feed | Untitled Instagram Feed -->
+        <script src="https://elfsightcdn.com/platform.js" async></script>
+        <div class="elfsight-app-aa94ece0-7fb0-474d-8a17-c712e4d0aebf" data-elfsight-app-lazy></div>
     </div>
 </div>
 <!-- Blog End -->
+
+<script>
+
+    // Remove Elfsight Instagram Feed branding link
+    document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(function() {
+            var branding = document.querySelector('.elfsight-app-aa94ece0-7fb0-474d-8a17-c712e4d0aebf a[rel="noreferrer"]');
+            if (branding) {
+                branding.remove();
+            }
+        }, 2000); // Wait for widget to load
+    });
+</script>
 
 <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">

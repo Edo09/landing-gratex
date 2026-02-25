@@ -73,6 +73,10 @@ a:active {
 /**********************************/
 /********** Top Bar CSS ***********/
 /**********************************/
+/* Hide Elfsight Instagram Feed branding link (free widget) */
+.elfsight-app-aa94ece0-7fb0-474d-8a17-c712e4d0aebf a[rel="noreferrer"] {
+  display: none !important;
+}
 
 /* ========== MODERN HEADER STYLES ========== */
 .main-header {
