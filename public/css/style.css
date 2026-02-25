@@ -1066,7 +1066,7 @@ a:active {
 /*******************************/
 .video {
   position: relative;
-  margin: 45px 0;
+  /* margin: 45px 0; */
   height: 100%;
   min-height: 500px;
   background: linear-gradient(rgba(3, 15, 39, 0.9), rgba(3, 15, 39, 0.9)),
