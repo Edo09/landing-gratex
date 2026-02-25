@@ -42,7 +42,7 @@ $services = getApiData('landing/services');
 if (empty($services)) {
     $services = [
         [
-            'title' => 'Building Construction',
+            'title' => 'Impresiones',
             'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             'image_path' => 'https://placehold.co/400'
         ],

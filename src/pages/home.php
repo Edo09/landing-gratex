@@ -170,7 +170,7 @@
 <!-- Video Start -->
 <div class="video wow fadeIn" data-wow-delay="0.1s">
     <div class="container">
-        <button type="button" class="btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc"
+        <button type="button" class="btn-play" data-toggle="modal" data-src="public/videos/video.mp4"
             data-target="#videoModal">
             <span></span>
         </button>
