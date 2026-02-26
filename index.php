@@ -59,8 +59,6 @@ switch ($request) {
 
 </head>
 
-</head>
-
 <body>
     <div class="wrapper">
         <?php

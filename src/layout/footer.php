@@ -1,5 +1,5 @@
 <!-- Footer Start -->
-<div class="footer wow fadeIn" data-wow-delay="0.3s">
+<footer class="footer wow fadeIn" data-wow-delay="0.3s">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-lg-3">
@@ -63,7 +63,7 @@
             </div>
         </div>
     </div>
-</div>
+</footer>
 <!-- Footer End -->
 
 <!-- Social Media Sidebar Start -->
@@ -79,6 +79,7 @@
 <a href="#top" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
 <!-- Login Modal -->
+
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -121,8 +122,9 @@
                             aria-hidden="true" style="display: none;"></span>
                     </button>
                     <div class="text-center mt-3">
-                        <p style="color: #6c757d; margin-bottom: 0;">¿No tienes una cuenta? 
-                            <a id="register-link" href="#" style="color: #00417a; font-weight: 600; text-decoration: none;">Regístrate aquí</a>
+                        <p style="color: #6c757d; margin-bottom: 0;">¿No tienes una cuenta?
+                            <a id="register-link" href="#"
+                                style="color: #00417a; font-weight: 600; text-decoration: none;">Regístrate aquí</a>
                         </p>
                     </div>
                 </form>
