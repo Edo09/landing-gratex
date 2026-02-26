@@ -120,6 +120,11 @@
                         <span id="login-spinner" class="spinner-border spinner-border-sm" role="status"
                             aria-hidden="true" style="display: none;"></span>
                     </button>
+                    <div class="text-center mt-3">
+                        <p style="color: #6c757d; margin-bottom: 0;">¿No tienes una cuenta? 
+                            <a id="register-link" href="#" style="color: #00417a; font-weight: 600; text-decoration: none;">Regístrate aquí</a>
+                        </p>
+                    </div>
                 </form>
             </div>
         </div>

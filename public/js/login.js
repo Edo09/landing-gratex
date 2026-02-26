@@ -1,6 +1,9 @@
 $(document).ready(function () {
 
     const API_URL = 'https://gratex.net';
+
+    // Set register link href
+    $('#register-link').attr('href', API_URL + '/admin/signup');
     $('#loginForm').on('submit', function (e) {
         e.preventDefault();
 
