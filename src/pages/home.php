@@ -192,7 +192,6 @@
 <!-- Blog End -->
 
 <script>
-
     // Remove Elfsight Instagram Feed branding link
     document.addEventListener('DOMContentLoaded', function() {
         setTimeout(function() {
