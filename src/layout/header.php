@@ -4,7 +4,7 @@
         <!-- Logo -->
         <div class="header-logo">
             <a href="/">
-                <img src="public/img/logos/logo-gratex-notext.png" alt="Gratex Logo">
+                <img src="public/img/logos/logo-gratex-dark.svg" alt="Gratex Logo">
             </a>
         </div>
 
