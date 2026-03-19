@@ -15,7 +15,7 @@
                     <h2>Ubicación y Contacto</h2>
                     <p><i class="fa fa-map-marker-alt"></i>Calle José Nicolás Casimiro, #85, Ens. Espaillat</p>
                     <p><i class="fa fa-phone-alt"></i>(809) 538 9203</p>
-                    <p><i class="fa fa-envelope"></i>gratexrd@gmail.com</p>
+                    <p><i class="fa fa-envelope"></i>info@gratex.net</p>
                     <div class="footer-social">
                         <a href=""><i class="fab fa-facebook-f"></i></a>
                         <a href=""><i class="fab fa-instagram"></i></a>

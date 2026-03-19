@@ -5,8 +5,8 @@
             <p>Contactanos</p>
             <h2 class="mb-3">Para cualquier consulta</h2>
             <h4 class="text-center mx-auto" style="max-width: 700px;">
-                Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos. 
-                
+                Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos.
+
             </h4>
         </div>
         <div class="row">
@@ -30,7 +30,7 @@
                         <i class="flaticon-send-mail"></i>
                         <div class="contact-text">
                             <h2>Email</h2>
-                            <p>gratexrd@gmail.com</p>
+                            <p>info@gratex.net</p>
                         </div>
                     </div>
                 </div>

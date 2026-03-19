@@ -58,13 +58,13 @@
                     </a>
                 </div>
                 <div class="header-contact-item">
-                    <a href="mailto:gratexrd@gmail.com" class="contact-link">
+                    <a href="mailto:info@gratex.net" class="contact-link">
                         <div class="contact-icon">
                             <i class="flaticon-send-mail"></i>
                         </div>
                         <div class="contact-info">
                             <span class="contact-label">Email</span>
-                            <span class="contact-value">gratexrd@gmail.com</span>
+                            <span class="contact-value">info@gratex.net</span>
                         </div>
                     </a>
                 </div>
@@ -91,7 +91,7 @@
         </ul>
         <div class="mobile-contact-info">
             <a href="tel:+18095389203"><i class="flaticon-call"></i> (809) 538 9203</a>
-            <a href="mailto:gratexrd@gmail.com"><i class="flaticon-send-mail"></i> gratexrd@gmail.com</a>
+            <a href="mailto:info@gratex.net"><i class="flaticon-send-mail"></i> info@gratex.net</a>
         </div>
         <a href="#" class="mobile-cta-btn" data-toggle="modal" data-target="#loginModal">Ingresar</a>
     </div>
