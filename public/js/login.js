@@ -24,7 +24,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: 'POST',
-            url: API_URL + '/api/auth/login',
+            url: API_URL + '/api2/auth/login',
             data: JSON.stringify(formData),
             contentType: 'application/json',
             success: function (response) {
